@@ -83,6 +83,8 @@
    equal to 'resident'
 4. test with both objects
 
+<!--** COMPLETADO  -->
+
 ## Strings #8
 
 1. create function fullName
