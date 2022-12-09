@@ -1,13 +1,15 @@
 //**TUTO EJEMPLO Ejemplo */
-
-const morning = () => `Good Morning`; //callback-function
-// higher-order-function: llama a la función morning
-const great = (name) => {
+// callback-function: ya q es llamada por names
+const dayTime = (time) => time;
+// higher-order-function: llama a la función dayTime y a su vez callback-function: ya q es llamada por great
+const names = (name) => `Good ${dayTime(`Morning`)} ${name}`;
+// higher-order-function: llama a la función names
+const great = () => {
   const myName = "Manu";
-  console.log(`${morning()} ${name}, my name is ${myName}`);
+  return `${names(`Mari`).toUpperCase()}, my name is ${myName}`;
 };
 
-great(`Mari`);
+console.log(great().toUpperCase());
 
 /**
  * *------------------------------------------------------------------------------------------
