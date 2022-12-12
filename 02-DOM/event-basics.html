@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Events</title>
+    <style>
+      .red {
+        background-color: red;
+        color: white;
+        font-size: 2rem;
+        width: fit-content;
+        text-transform: uppercase;
+      }
+      .blue {
+        background-color: blue;
+        color: white;
+        font-size: 2rem;
+        width: fit-content;
+        text-transform: capitalize;
+        letter-spacing: 1rem;
+      }
+
+      .btn {
+        background: crimson;
+        color: white;
+        font-size: 1.2rem;
+        border: none;
+        padding: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Events in JS</h1>
+    <button class="btn">Click Me</button>
+    <p onclick="this.classList.toggle('red')">The Old Style</p>
+    <script src="./event-basics.js"></script>
+  </body>
+</html>
