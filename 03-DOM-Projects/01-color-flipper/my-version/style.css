@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: red;
+}
+
+/**
+** Header
+*/
+
+header .title {
+  color: #6184d8;
+  font-size: 2em;
+}
+
+header {
+  background-color: azure;
+  padding: 0.5rem;
+  display: grid;
+  height: fit-content;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#header-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  min-width: 400px;
+  width: 60vw;
+  max-width: 700px;
+  /* border: 1px solid black; */
+  justify-self: center;
+}
+
+#header-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#header-btns button {
+  font-size: 1.1rem;
+  border: none;
+  background-color: azure;
+  transition: all linear 0.5s;
+}
+#header-btns button:hover {
+  color: #6184d8;
+}
+
+/**
+** Section-Main
+*! Falta el gradiente del button
+*/
+
+#main-section {
+  height: 65vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-content: center;
+  margin: 10vh 0 10vh 0;
+  gap: 1rem;
+}
+
+.main-content {
+  background-color: black;
+  color: white;
+  align-self: center;
+  padding: 0.5rem;
+  border-radius: 0.5em;
+  text-align: center;
+  margin: 0 1rem;
+  align-self: flex-end;
+  border: 2px solid white;
+}
+
+.main-content span {
+  color: #6184d8;
+}
+
+#main-btn {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.4rem;
+  justify-self: center;
+  background-color: red;
+  color: black;
+  border-radius: 0.5em;
+  font-weight: bold;
+  border: 2px solid black;
+}
+
+#main-btn:hover {
+  transition: all linear 0.5s;
+  color: white;
+  border: 2px solid white;
+  /* background: black; */
+}
